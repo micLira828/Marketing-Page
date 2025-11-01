@@ -1,297 +1,56 @@
-<!--Hero Image
-Describe the problem
-Position yourself as the solution
-Social Proof
-Call to action
--->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link
-      href="/docs/5.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-    />
-    <link href="style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <main>
-      <!-- Hero Section -->
-      <header class="hero d-flex align-items-center text-center py-5">
-        <div class="container position-relative">
-          <h1 class="display-4 fw-bold hero-title">
-            Hi, I’m Michelle — a Full-Stack Developer and Digital Alchemist.
-          </h1>
-          <p class="lead mx-auto hero-subtitle">
-            I turn ideas into living, breathing web experiences — blending
-            logic, design, and a touch of magic.
-          </p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
-              Create With Me
-            </button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-              What I do
-            </button>
-            <div class="b-example-divider"></div>
-            <div class="b-example-divider"></div>
-          </div>
-        </div>
-      </header>
-      <!----
-Describe the problem
--->
-      <div class="container py-4">
-        <div class="container-fluid py-5">
-          <h1 class="display-5 fw-bold">Your story doesn't fit a template</h1>
-          <p class="col-md-8 fs-4">
-            Most small businesses can’t afford a full development team — but
-            still deserve a website that feels alive, current, and uniquely
-            theirs. Templates and cookie-cutter tools only get you almost there
-            — and “almost” doesn’t tell your story.
-          </p>
-          <p class="col-md-8 fs-4">
-            That’s where I come in. I craft tailored web experiences that fit
-            your brand, your needs, and your dreams — without the agency price
-            tag.
-          </p>
-          <button class="btn btn-primary btn-lg" type="button">
-            Start your project
-          </button>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="hero" aria-label="Hero">
+  <div class="container hero-inner">
+    <h1>Hi, I’m Michelle — a Full-Stack Developer and Digital Alchemist.</h1>
+    <p class="lead">I turn ideas into living, breathing web experiences — blending logic, design, and a touch of magic.</p>
+    <a class="btn-primary" href="#contact">Let's build something that fits you perfectly</a>
+  </div>
+</section>
 
-      <!----
+<section class="section-problem container">
+  <div class="divider-constellation"><span class="star" aria-hidden="true"></span></div>
+  <h2>Your story doesn't fit a template.</h2>
+  <p>Most small businesses can’t afford a full engineering team — yet they still deserve a website that’s alive, modern, and uniquely theirs...</p>
+</section>
 
-Social Proof
--->
+<section class="container features" aria-label="Services">
+  <div class="feature-card">
+    <div class="icon">🖥️</div>
+    <h3>Design & Build</h3>
+    <p>From frontend sparkle to backend strength — I build your site from the ground up.</p>
+  </div>
+  <div class="feature-card">
+    <div class="icon">🔗</div>
+    <h3>Modern, Scalable Architecture</h3>
+    <p>Future-proof code + tools mean your business is ready to grow.</p>
+  </div>
+  <div class="feature-card">
+    <div class="icon">⚙️</div>
+    <h3>Custom Tools & Integrations</h3>
+    <p>I’ll build the tailored tool your business really needs.</p>
+  </div>
+  <div class="feature-card">
+    <div class="icon">🏪</div>
+    <h3>Small Business Friendly</h3>
+    <p>No agency budget needed — just smart solutions shaped around your vision.</p>
+  </div>
+</section>
 
-      <!--Position yourself as the solution-->
+<section class="section-cta">
+  <div class="container">
+    <h2 class="text-gold">Ready to begin your build?</h2>
+    <p class="small">Whether you’re launching your first brand, reviving an old website, or dreaming of a custom web tool — I’ll work closely with you to bring it to life.</p>
+    <a class="btn-primary" href="#contact">Start your project today</a>
+  </div>
+</section>
 
-      <div class="container marketing">
-        <!-- Three columns of text below the carousel -->
-
-        <!-- /.row -->
-        <!-- START THE FEATURETTES -->
-        <hr class="featurette-divider" />
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">
-              Modern, Scalable
-              <span class="text-body-secondary">Architecture</span>
-            </h2>
-            <p class="lead">
-              Future-proof code + tools mean your business is ready to grow.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <svg
-              aria-label="Placeholder: 500x500"
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              height="500"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="500"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-bg)"
-              ></rect>
-              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                500x500
-              </text>
-            </svg>
-          </div>
-        </div>
-        <hr class="featurette-divider" />
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1">
-              Design and
-              <span class="text-body-secondary">build</span>
-            </h2>
-            <p class="lead">
-              From frontend sparkle to backend strength — I build your site from
-              the ground up.
-            </p>
-          </div>
-          <div class="col-md-5 order-md-1">
-            <svg
-              aria-label="Placeholder: 500x500"
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              height="500"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="500"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-bg)"
-              ></rect>
-              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                500x500
-              </text>
-            </svg>
-          </div>
-        </div>
-        <hr class="featurette-divider" />
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">
-              Small Business
-              <span class="text-body-secondary">Friendly</span>
-            </h2>
-            <p class="lead">
-              No agency budget needed. Just smart solutions shaped around your
-              vision.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <svg
-              aria-label="Placeholder: 500x500"
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-              height="500"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="500"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-bg)"
-              ></rect>
-              <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">
-                500x500
-              </text>
-            </svg>
-          </div>
-        </div>
-        <hr class="featurette-divider" />
-        <!-- /END THE FEATURETTES -->
-        <!--Social Proof-->
-
-        <div class="row">
-          <h1 class="display-5 text-center fw-bold">What others have said</h1>
-          <div class="col-lg-4">
-            <svg
-              aria-label="Placeholder"
-              class="bd-placeholder-img rounded-circle"
-              height="140"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="140"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>
-              Some representative placeholder content for the three columns of
-              text below the carousel. This is the first column.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#">View details »</a>
-            </p>
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <svg
-              aria-label="Placeholder"
-              class="bd-placeholder-img rounded-circle"
-              height="140"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="140"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>
-              Another exciting bit of representative placeholder content. This
-              time, we've moved on to the second column.
-            </p>
-            <p><a class="btn btn-secondary" href="#">View details »</a></p>
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <svg
-              aria-label="Placeholder"
-              class="bd-placeholder-img rounded-circle"
-              height="140"
-              preserveAspectRatio="xMidYMid slice"
-              role="img"
-              width="140"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>
-              And lastly this, the third column of representative placeholder
-              content.
-            </p>
-            <p>
-              <a class="btn btn-secondary" href="#">View details »</a>
-            </p>
-          </div>
-          <!-- /.col-lg-4 -->
-        </div>
-      </div>
-
-      <!--Call to Action-->
-      <div class="col-lg-8 mx-auto p-4 py-md-5">
-        <h1>Work with me!</h1>
-        <p class="fs-5 col-md-8">
-          Whether you’re launching your first brand, reviving an old website, or
-          dreaming of a custom web tool — I’ll work closely with you to bring it
-          to life, beautifully and smartly.
-        </p>
-        <div class="mb-5">
-          <a href="/docs/5.3/examples" class="btn btn-primary btn-lg px-4">
-            Bring your idea to life</a
-          >
-        </div>
-        <hr class="col-3 col-md-2 mb-5" />
-      </div>
-    </main>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+</body>
 </html>
