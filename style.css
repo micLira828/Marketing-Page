@@ -1,0 +1,194 @@
+/* === Digital Alchemist Theme — Bootstrap Typography Override Layer (Final Fixed Version) === */
+
+/* Google Fonts (add in <head> above this stylesheet)
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+*/
+
+/* Variables */
+:root {
+  --color-midnight: #1B1F2A;
+  --color-twilight: #5D4E8D;
+  --color-gold: #D8C08A;
+  --color-moon: #F4F4F6;
+  --color-smoke: #0D0E11;
+
+  --hero-gradient: linear-gradient(180deg, var(--color-midnight) 0%, var(--color-twilight) 55%, #4E2278 100%);
+  --radius-md: 0.75rem;
+  --soft-shadow: 0 8px 24px rgba(11,12,14,0.45);
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* Global Resets */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-midnight);
+  color: var(--color-moon);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-gold);
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
+}
+
+/* Ensure hero headings always show correctly */
+.hero h1, 
+.jumbotron h1, 
+.hero h2, 
+.jumbotron h2, 
+.hero p, 
+.jumbotron p {
+  color: var(--color-moon) !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+/* Body Text */
+p, li, span, label, small {
+  font-family: var(--font-body);
+  color: rgba(244,244,246,0.92);
+  font-weight: 400;
+}
+
+/* Accents */
+strong, b {
+  color: var(--color-gold);
+  font-weight: 600;
+}
+blockquote, .lead {
+  font-family: var(--font-heading);
+  font-style: italic;
+  color: rgba(216,192,138,0.9);
+  border-left: 3px solid rgba(216,192,138,0.4);
+  padding-left: 1rem;
+}
+
+/* Links */
+a {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover, a:focus {
+  color: #EAD8A2;
+}
+
+/* Buttons */
+.btn, .btn-primary {
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius-md);
+}
+.btn-primary {
+  background-color: transparent !important;
+  border: 2px solid rgba(216,192,138,0.9) !important;
+  color: rgba(216,192,138,0.95) !important;
+  transition: all 0.25s cubic-bezier(.2,.9,.2,1);
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: linear-gradient(180deg, rgba(216,192,138,0.98), rgba(196,160,90,0.95));
+  color: var(--color-smoke) !important;
+  border-color: transparent !important;
+  transform: translateY(-3px);
+}
+
+/* Hero / Jumbotron */
+.hero, .jumbotron {
+  background-image: var(--hero-gradient);
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.hero::before, .jumbotron::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(216,192,138,0.14) 1px, transparent 1px),
+    radial-gradient(circle at 30% 80%, rgba(216,192,138,0.10) 1px, transparent 1px),
+    radial-gradient(circle at 50% 40%, rgba(216,192,138,0.12) 1px, transparent 1px),
+    radial-gradient(circle at 75% 15%, rgba(216,192,138,0.08) 1px, transparent 1px);
+  background-size: 120px 120px, 180px 180px, 80px 80px, 140px 140px;
+  mix-blend-mode: screen;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* Cards / Features */
+.card, .featurette {
+  background-color: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius-md);
+  box-shadow: var(--soft-shadow);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(11,12,14,0.6);
+}
+
+/* Divider */
+.divider-constellation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+}
+.divider-constellation::before,
+.divider-constellation::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(216,192,138,0.22), transparent);
+  margin: 0 1rem;
+}
+.divider-constellation .star {
+  width: 18px;
+  height: 18px;
+  background: radial-gradient(circle, rgba(216,192,138,1) 0%, rgba(216,192,138,0.7) 50%, rgba(216,192,138,0.3) 100%);
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(216,192,138,0.6);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.03));
+  padding: 2rem 0;
+  color: rgba(244,244,246,0.7);
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .hero h1, .jumbotron h1 {
+    font-size: 2.4rem;
+  }
+  .hero p, .jumbotron p {
+    font-size: 1.1rem;
+  }
+  .card, .featurette {
+    padding: 1.5rem;
+  }
+}
+
+
+.hero h1,
+.jumbotron h1 {
+  color: var(--color-gold) !important;
+  -webkit-text-fill-color: var(--color-gold) !important;
+}
