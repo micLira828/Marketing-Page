@@ -86,6 +86,9 @@ body {
   cursor: pointer;
 }
 
+.alert-box {
+  transition: opacity 0.3s ease;
+}
 
 
 
