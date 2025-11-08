@@ -11,7 +11,7 @@
   <div class="container hero-inner">
     <h1>Hi, I’m Michelle — a Full-Stack Developer and Digital Alchemist.</h1>
     <p class="lead">I turn ideas into living, breathing web experiences — blending logic, design, and a touch of magic.</p>
-    <a class="btn-primary" href="#contact">Let's build something that fits you perfectly</a>
+    <a class="popup btn-primary" href="#contact">Let's build something that fits you perfectly</a>
   </div>
 </section>
 
@@ -48,9 +48,30 @@
   <div class="container">
     <h2 class="text-gold">Ready to begin your build?</h2>
     <p class="small">Whether you’re launching your first brand, reviving an old website, or dreaming of a custom web tool — I’ll work closely with you to bring it to life.</p>
-    <a class="btn-primary" href="#contact">Start your project today</a>
+    <a class="popup btn-primary" href="#contact">Start your project today</a>
   </div>
 </section>
+<div id="customAlert" class="alert-box">
+  <p>🌙 Welcome to my magical website!</p>
+  <button onclick="closeAlert()">Okay</button>
+</div>
+<script>
 
+function showAlert() {
+  const alertBox = document.getElementById("customAlert");
+  alertBox.style.display = "block";
+  setTimeout(() => alertBox.classList.add("show"), 10);
+}
+
+function closeAlert() {
+  const alertBox = document.getElementById("customAlert");
+  alertBox.classList.remove("show");
+  setTimeout(() => alertBox.style.display = "none", 400);
+}
+ let popup_button = document.querySelectorAll('.popup');
+
+popup_button.onclick = showAlert();
+
+</script>
 </body>
 </html>
