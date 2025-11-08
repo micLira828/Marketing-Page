@@ -52,7 +52,6 @@ body {
   line-height: 1.55;
 }
 
-
 .alert-box {
   display: none;
   position: fixed;
@@ -86,6 +85,8 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
+
+
 
 
 /* Make default text readable on dark bg */
