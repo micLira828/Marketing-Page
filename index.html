@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marketing Page - Freelance</title>
   <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
 </head>
 <body>
   <section class="hero" aria-label="Hero">
@@ -53,15 +54,16 @@
 </section>
 <div id="customAlert" class="alert-box">
   <div class="alert-content">
-    <h2>🌿 Contact Me to Get Started</h2>
-    <div class="social-icons">
-      <a href="https://instagram.com/yourusername" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank"><img src="icons/linkedin.png" alt="LinkedIn"></a>
-      <a href="https://wa.me/15551234567" target="_blank"><img src="icons/whatsapp.png" alt="WhatsApp"></a>
-      <a href="mailto:your@email.com"><img src="icons/email.png" alt="Email"></a>
+    <div class="dialog-header">
+      <span class="dialog-icon"><i class="fa-solid fa-circle-question"></i></span>
+      <h2>Need Help Getting Started?</h2>
     </div>
-    <button onclick="closeAlert()">Close</button>
+    <p>✨ Let's bring your vision to life. Reach out and I’ll guide you through the next step.</p>
+    <div class="dialog-actions">
+      <button onclick="closeAlert()">Close</button>
+    </div>
   </div>
+</div>
 </div>
 <script>
 
@@ -76,7 +78,7 @@ function closeAlert() {
   const alertBox = document.getElementById("customAlert");
   alertBox.style.opacity = "0";
   setTimeout(() => { alertBox.style.display = "none"; }, 300);
-} was
+} 
 </script>
 </body>
 </html>
