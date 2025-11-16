@@ -211,6 +211,66 @@ p, li { color: rgba(244,244,246,0.95); }
   background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.03) 100%);
 }
 
+.work-with-me {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.work-with-me .section-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.work-with-me .section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-light, #aaa);
+  margin-bottom: 2.5rem;
+}
+
+.service-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 1.8rem;
+  max-width: 360px;
+  min-width: 280px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.7rem;
+}
+
+.service-card p {
+  margin-bottom: 1.3rem;
+  color: var(--text-light, #ccc);
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: 1px solid var(--accent, #c4a8ff);
+  color: var(--accent, #c4a8ff);
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--accent, #c4a8ff);
+  color: #1a1a1a;
+}
+
+
 .section-problem h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
