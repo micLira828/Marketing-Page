@@ -326,6 +326,13 @@ p, li { color: rgba(244,244,246,0.95); }
   color: #D9D4F6; /* soft lavender-gray */
 }
 
+.work-with-me .section-title {
+  background: linear-gradient(90deg, #c4a8ff, #e6d8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
 
 .feature-card {
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
