@@ -430,11 +430,21 @@ p, li { color: rgba(244,244,246,0.95); }
 
 .portfolio-title {
   text-align: center;
-  margin: 0 auto;
-  padding-top: 15px;
-  color: #4a4a4a; /* or your gold #b0894f */
-  font-size: 1.2rem;
+  color: #4a4a4a; 
+  font-size: 1.3rem;
   font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.portfolio-desc {
+  text-align: center;
+  color: #8a6a32; 
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.4;
+  max-width: 250px;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 /* --- Utility helpers --- */
