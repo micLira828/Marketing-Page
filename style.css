@@ -430,7 +430,7 @@ p, li { color: rgba(244,244,246,0.95); }
 
 .portfolio-title {
   text-align: center;
-  color: #4a4a4a; 
+  color: #4a4a4a; /* or gold #b0894f */
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 8px;
@@ -438,13 +438,20 @@ p, li { color: rgba(244,244,246,0.95); }
 
 .portfolio-desc {
   text-align: center;
-  color: #8a6a32; 
+  color: ##b0894f ; /* soft warm gray */
   font-size: 0.95rem;
-  font-style: italic;
   line-height: 1.4;
   max-width: 250px;
   margin: 0 auto;
   padding-bottom: 10px;
+}
+
+* SVG container */
+.coming-soon-svg {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
 }
 
 /* --- Utility helpers --- */
