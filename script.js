@@ -1,4 +1,4 @@
-  alert("Welcome!");
+console.log("Welcome!");
   const API_BASE_URL = "https://portfolio-in-flask.onrender.com";
   function showAlert() {
         const alertBox = document.getElementById("customAlert");
