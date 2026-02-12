@@ -1,0 +1,33 @@
+/* =====================
+CONTACT FORM
+===================== */
+
+document.getElementById("contact-form")
+.addEventListener("submit", async (e) => {
+e.preventDefault();
+
+const form = e.target;
+const status = document.getElementById("form-status");
+
+const data = {
+name: form.name.value,
+email: form.email.value,
+message: form.message.value
+};
+
+try {
+const res = await fetch(`${API_BASE_URL}/api/messages`, {
+method: "POST",
+headers: { "Content-Type": "application/json" },
+body: JSON.stringify(data)
+});
+
+if (!res.ok) throw new Error("Failed");
+
+status.textContent = "Thanks! I’ll get back to you soon.";
+form.reset();
+
+} catch {
+status.textContent = "Something went wrong. Please try again later.";
+}
+});
