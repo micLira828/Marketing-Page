@@ -402,6 +402,104 @@ p, li { color: rgba(244,244,246,0.95); }
   margin-bottom: var(--space-sm);
 }
 
+/* ===== Contact Section Styling ===== */
+#contact {
+  max-width: 600px;
+  margin: var(--space-xl) auto;
+  padding: var(--space-lg);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: var(--moon);
+  background: rgba(27, 31, 42, 0.95); /* blends with page dark background */
+  border-radius: var(--radius-md);
+  box-shadow: var(--soft-shadow);
+}
+
+#contact h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: var(--fs-h2);
+  margin-bottom: var(--space-sm);
+  color: var(--color-gold);
+}
+
+#contact p {
+  font-size: var(--fs-body);
+  margin-bottom: var(--space-md);
+  color: rgba(244,244,246,0.9);
+  line-height: 1.6;
+}
+
+/* ===== Form Styling ===== */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: var(--space-md);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-body);
+  font-family: inherit;
+  background: rgba(255,255,255,0.03);
+  color: var(--moon);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  resize: vertical;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 10px rgba(216,192,138,0.3);
+  outline: none;
+}
+
+#contact-form button {
+  padding: var(--space-md);
+  background: var(--color-gold);
+  color: var(--gold-contrast-text);
+  font-size: var(--fs-body);
+  font-weight: 700;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#contact-form button:hover {
+  background: linear-gradient(180deg, rgba(216,192,138,0.95), rgba(196,160,90,0.95));
+  transform: translateY(-2px);
+}
+
+/* ===== Secondary CTA Styling ===== */
+.secondary-cta {
+  margin-top: var(--space-md);
+  font-size: 0.95rem;
+  color: rgba(244,244,246,0.8);
+}
+
+.secondary-cta a {
+  color: var(--color-gold);
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 5px;
+  transition: color 0.2s;
+}
+
+.secondary-cta a:hover {
+  color: var(--color-twilight);
+}
+
+/* ===== Form Status ===== */
+#form-status {
+  margin-top: var(--space-sm);
+  font-size: 0.95rem;
+  color: var(--moon);
+}
+
 /* --- Footer --- */
 .site-footer {
   padding: var(--space-lg) 0;
