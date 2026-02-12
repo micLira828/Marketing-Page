@@ -43,6 +43,7 @@ body: JSON.stringify(data)
 
 if (!res.ok) throw new Error("Failed");
 
+alert("Thanks so much for submitting your info to work with me! I'll get back to you within 24 hours!");
 status.textContent = "Thanks! I’ll get back to you soon.";
 form.reset();
 
