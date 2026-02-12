@@ -1,5 +1,23 @@
+  const API_BASE_URL = "https://portfolio-in-flask.onrender.com";
+  function showAlert() {
+        const alertBox = document.getElementById("customAlert");
+        alertBox.style.display = "block";
+        alertBox.style.opacity = "0";
+        setTimeout(() => {
+          alertBox.style.opacity = "1";
+        }, 10);
+      }
+
+      function closeAlert() {
+        const alertBox = document.getElementById("customAlert");
+        alertBox.style.opacity = "0";
+        setTimeout(() => {
+          alertBox.style.display = "none";
+        }, 300);
+      }
+
 /* =====================
-CONTACT FORM
+    CONTACT FORM
 ===================== */
 
 document.getElementById("contact-form")
