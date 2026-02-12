@@ -568,3 +568,17 @@ p, li { color: rgba(244,244,246,0.95); }
   .hero h1 { font-size: 1.85rem; }
   .btn-primary { width: 90%; padding: 12px; }
 }
+
+/* ===== Responsive ===== */
+@media (max-width: 560px) {
+  #contact {
+    padding: var(--space-md);
+    margin: var(--space-lg) auto;
+  }
+  #contact h2 {
+    font-size: 1.6rem;
+  }
+  #contact-form button {
+    padding: var(--space-sm);
+  }
+}
